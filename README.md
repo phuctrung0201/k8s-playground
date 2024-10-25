@@ -1,6 +1,6 @@
 # K8S Playground
 
-## Onboard service
+## Onboard a service
 
 Init service source
 
@@ -13,4 +13,6 @@ Init service source
 
 Build service image
 
-> make image name=<service_name>
+```
+make image name=<service_name>
+```
