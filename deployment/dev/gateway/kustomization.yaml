@@ -1,0 +1,5 @@
+helmCharts:
+  - name: gateway
+    valuesFile: values.yaml
+helmGlobals:
+  chartHome: ../../common
