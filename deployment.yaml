@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gateway
+  name: gateway
+  namespace: gateway
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gateway
+      env: prd
+  template:
+    metadata:
+      labels:
+        app: gateway
+        env: prd
+    spec:
+      containers:
+        - image: gateway:560542
+          name: gateway
+          ports:
+            - containerPort: 8080

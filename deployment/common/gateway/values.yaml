@@ -1,3 +1,2 @@
 appName: gateway
-env: dev
-verison: 560542
+namespace: gateway
